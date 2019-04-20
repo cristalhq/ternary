@@ -2,13 +2,13 @@ package ternary
 
 // MA represents Tarski's "it is not false that...".
 //
-// +---+----+
-// | A | MA |
-// |---+----|
-// | F |  F |
-// | U |  T |
-// | T |  T |
-// +---+----+
+//	+---+----+
+//	| A | MA |
+//	|---+----|
+//	| F |  F |
+//	| U |  T |
+//	| T |  T |
+//	+---+----+
 //
 func MA(a Value) Value {
 	if a == False {
@@ -19,13 +19,13 @@ func MA(a Value) Value {
 
 // LA represents Tarski's "it is true that...".
 //
-// +---+----+
-// | A | LA |
-// |---+----|
-// | F |  F |
-// | U |  F |
-// | T |  T |
-// +---+----+
+//	+---+----+
+//	| A | LA |
+//	|---+----|
+//	| F |  F |
+//	| U |  F |
+//	| T |  T |
+//	+---+----+
 //
 func LA(a Value) Value {
 	if a == True {
@@ -36,13 +36,13 @@ func LA(a Value) Value {
 
 // IA represents Tarski "it is unknown that...".
 //
-// +---+----+
-// | A | IA |
-// |---+----|
-// | F |  F |
-// | U |  T |
-// | T |  F |
-// +---+----+
+//	+---+----+
+//	| A | IA |
+//	|---+----|
+//	| F |  F |
+//	| U |  T |
+//	| T |  F |
+//	+---+----+
 //
 func IA(a Value) Value {
 	if a == Unknown {

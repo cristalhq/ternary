@@ -2,15 +2,15 @@ package ternary
 
 // AndB returns the result of Bochvar's logical conjunction on two values.
 //
-// +--------+-----------|
-// |        |     B     |
-// | A ∧ B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | F | U | F |
-// | A  | U | U | U | U |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------|
+//	|        |     B     |
+//	| A ∧ B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | F | U | F |
+//	| A  | U | U | U | U |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func AndB(a Value, b Value) Value {
 	switch {
@@ -25,15 +25,15 @@ func AndB(a Value, b Value) Value {
 
 // OrB returns the result of Bochvar's logical disjunction on two values.
 //
-// +--------+-----------+
-// |        |     B     |
-// | A ∨ B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | F | U | T |
-// | A  | U | U | U | U |
-// |    | T | T | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A ∨ B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | F | U | T |
+//	| A  | U | U | U | U |
+//	|    | T | T | U | T |
+//	+----+---+---+---+---+
 //
 func OrB(a Value, b Value) Value {
 	switch {
@@ -48,15 +48,15 @@ func OrB(a Value, b Value) Value {
 
 // ImpB returns the result of Bochvar's logical implication that is represented as "a implies b".
 //
-// +--------+-----------+
-// |        |     B     |
-// | A → B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | T | U | T |
-// | A  | U | U | U | T |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A → B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | T | U | T |
+//	| A  | U | U | U | T |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func ImpB(a Value, b Value) Value {
 	switch {

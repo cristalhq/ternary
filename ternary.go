@@ -72,13 +72,13 @@ func Equal(a, b Value) Value {
 
 // Not returns the result of a logical negation of a value.
 //
-// +---+----+
-// | A | ¬A |
-// |---+----|
-// | F |  T |
-// | U |  U |
-// | T |  F |
-// +---+----+
+//	+---+----+
+//	| A | ¬A |
+//	|---+----|
+//	| F |  T |
+//	| U |  U |
+//	| T |  F |
+//	+---+----+
 //
 func Not(a Value) Value {
 	switch a {
@@ -93,15 +93,15 @@ func Not(a Value) Value {
 
 // And returns the result of logical conjunction of two values.
 //
-// +--------+-----------|
-// |        |     B     |
-// | A ∧ B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | F | F | F |
-// | A  | U | F | U | U |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------|
+//	|        |     B     |
+//	| A ∧ B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | F | F | F |
+//	| A  | U | F | U | U |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func And(a Value, b Value) Value {
 	switch {
@@ -116,15 +116,15 @@ func And(a Value, b Value) Value {
 
 // Or returns the result of logical disjunction of two values.
 //
-// +--------+-----------+
-// |        |     B     |
-// | A ∨ B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | F | U | T |
-// | A  | U | U | U | T |
-// |    | T | T | T | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A ∨ B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | F | U | T |
+//	| A  | U | U | U | T |
+//	|    | T | T | T | T |
+//	+----+---+---+---+---+
 //
 func Or(a Value, b Value) Value {
 	switch {
@@ -140,15 +140,15 @@ func Or(a Value, b Value) Value {
 // Imp Returns the result of logical implication that is represented as "a implies b".
 // Same as OR(NOT(A), B).
 //
-// +--------+-----------+
-// |        |     B     |
-// | A → B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | T | T | T |
-// | A  | U | U | U | T |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A → B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | T | T | T |
+//	| A  | U | U | U | T |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func Imp(a Value, b Value) Value {
 	return Or(Not(a), b)
@@ -157,15 +157,15 @@ func Imp(a Value, b Value) Value {
 // ImpL returns the result of Lukasiewicz's logical implication that is represented as "a implies b".
 // Same as OR(NOT(A), B) except for both Unknown which is True.
 //
-// +--------+-----------+
-// |        |     B     |
-// | A → B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | T | T | T |
-// | A  | U | U | T | T |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A → B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | T | T | T |
+//	| A  | U | U | T | T |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func ImpL(a, b Value) Value {
 	if a == Unknown && b == Unknown {
@@ -177,15 +177,15 @@ func ImpL(a, b Value) Value {
 // Eqv Returns the result of logical biconditional of two values.
 // Same as OR(AND(A, B), AND(NOT(A), NOT(B))).
 //
-// +--------+-----------+
-// |        |     B     |
-// | A ↔ B  |---+---+---|
-// |        | F | U | T |
-// |----+---+---+---+---|
-// |    | F | T | U | F |
-// | A  | U | U | U | U |
-// |    | T | F | U | T |
-// +----+---+---+---+---+
+//	+--------+-----------+
+//	|        |     B     |
+//	| A ↔ B  |---+---+---|
+//	|        | F | U | T |
+//	|----+---+---+---+---|
+//	|    | F | T | U | F |
+//	| A  | U | U | U | U |
+//	|    | T | F | U | T |
+//	+----+---+---+---+---+
 //
 func Eqv(a Value, b Value) Value {
 	if a == Unknown || b == Unknown {
