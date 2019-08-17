@@ -14,9 +14,10 @@ go get github.com/cristalhq/ternary
 ## Example
 
 ```go
-a, b := ternary.False, ternary.True
+a, b, c := ternary.False, ternary.Unknown, ternary.True
 ternary.Not(a)
 ternary.Imp(a, b)
+ternary.ImpL(a, c)
 ternary.MA(b)
 ```
 
