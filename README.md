@@ -1,4 +1,7 @@
-# ternary [![GoDoc][doc-img]][doc] [![Go Report Card][reportcard-img]][reportcard]
+# ternary
+[![Build Status][travis-img]][travis-url]
+[![GoDoc][doc-img]][doc-url]
+[![Go Report Card][reportcard-img]][reportcard-url]
 
 Ternary logic for Go.
 
@@ -21,7 +24,9 @@ ternary.MA(b)
 
 [MIT License](LICENSE).
 
+[travis-img]: https://travis-ci.org/cristalhq/ternary.svg?branch=master
+[travis-url]: https://travis-ci.org/cristalhq/ternary
 [doc-img]: https://godoc.org/github.com/cristalhq/ternary?status.svg
-[doc]: https://godoc.org/github.com/cristalhq/ternary
+[doc-url]: https://godoc.org/github.com/cristalhq/ternary
 [reportcard-img]: https://goreportcard.com/badge/cristalhq/ternary
-[reportcard]: https://goreportcard.com/report/cristalhq/ternary
+[reportcard-url]: https://goreportcard.com/report/cristalhq/ternary
