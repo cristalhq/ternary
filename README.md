@@ -1,7 +1,9 @@
 # ternary
-[![Build Status][travis-img]][travis-url]
-[![GoDoc][doc-img]][doc-url]
-[![Go Report Card][reportcard-img]][reportcard-url]
+
+[![build-img]][build-url]
+[![pkg-img]][pkg-url]
+[![reportcard-img]][reportcard-url]
+[![coverage-img]][coverage-url]
 
 Ternary logic for Go.
 
@@ -21,13 +23,19 @@ ternary.ImpL(a, c)
 ternary.MA(b)
 ```
 
+## Documentation
+
+See [these docs][pkg-url].
+
 ## License
 
 [MIT License](LICENSE).
 
-[travis-img]: https://travis-ci.org/cristalhq/ternary.svg?branch=master
-[travis-url]: https://travis-ci.org/cristalhq/ternary
-[doc-img]: https://godoc.org/github.com/cristalhq/ternary?status.svg
-[doc-url]: https://godoc.org/github.com/cristalhq/ternary
-[reportcard-img]: https://goreportcard.com/badge/cristalhq/ternary
-[reportcard-url]: https://goreportcard.com/report/cristalhq/ternary
+[build-img]: https://github.com/cristalhq/atomix/workflows/build/badge.svg
+[build-url]: https://github.com/cristalhq/atomix/actions
+[pkg-img]: https://pkg.go.dev/badge/cristalhq/atomix
+[pkg-url]: https://pkg.go.dev/github.com/cristalhq/atomix
+[reportcard-img]: https://goreportcard.com/badge/cristalhq/atomix
+[reportcard-url]: https://goreportcard.com/report/cristalhq/atomix
+[coverage-img]: https://codecov.io/gh/cristalhq/atomix/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/cristalhq/atomix
