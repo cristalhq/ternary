@@ -31,11 +31,11 @@ See [these docs][pkg-url].
 
 [MIT License](LICENSE).
 
-[build-img]: https://github.com/cristalhq/atomix/workflows/build/badge.svg
-[build-url]: https://github.com/cristalhq/atomix/actions
-[pkg-img]: https://pkg.go.dev/badge/cristalhq/atomix
-[pkg-url]: https://pkg.go.dev/github.com/cristalhq/atomix
-[reportcard-img]: https://goreportcard.com/badge/cristalhq/atomix
-[reportcard-url]: https://goreportcard.com/report/cristalhq/atomix
-[coverage-img]: https://codecov.io/gh/cristalhq/atomix/branch/master/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/cristalhq/atomix
+[build-img]: https://github.com/cristalhq/ternary/workflows/build/badge.svg
+[build-url]: https://github.com/cristalhq/ternary/actions
+[pkg-img]: https://pkg.go.dev/badge/cristalhq/ternary
+[pkg-url]: https://pkg.go.dev/github.com/cristalhq/ternary
+[reportcard-img]: https://goreportcard.com/badge/cristalhq/ternary
+[reportcard-url]: https://goreportcard.com/report/cristalhq/ternary
+[coverage-img]: https://codecov.io/gh/cristalhq/ternary/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/cristalhq/ternary
